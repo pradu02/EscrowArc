@@ -1,0 +1,24 @@
+{
+  "name": "escrowarc",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "compile:contracts": "node scripts/compile-contracts.cjs",
+    "test:contracts": "npm run compile:contracts && node test/EscrowArc.test.cjs"
+  },
+  "dependencies": {
+    "ethers": "^6.13.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.4",
+    "vite": "^5.4.11",
+    "solc": "0.8.20",
+    "ganache": "^7.9.2"
+  }
+}
